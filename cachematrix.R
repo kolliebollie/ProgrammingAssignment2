@@ -29,15 +29,22 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Function 2:
 cacheSolve <- function(x, ...) {
+  
   ## return inverse of matrix (assuming that matrix is invertible)
   inverse <- x$getm()
-  ##returning inverse cached data
+  
+  ## returning inverse cached data
   if(!is.null(inverse)) {
-    message("getting cached data.")
+    message("receiving cached data")
     return(inverse)
   }
+  
+  ## get matrix
   data <- x$get()
+  
+  ## calculation of the inverse of the matrix
   inverse <- solve(data)
+  
   x$setm(inverse)
   
   ## return matrix
