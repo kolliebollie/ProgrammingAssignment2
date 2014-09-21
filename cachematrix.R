@@ -1,3 +1,6 @@
+## Coursera course: R programming
+## Made by Jasmijn Kol
+
 ##Cashing the inverse of a matrix by creating two functions.
 ## Function 1: caches the inverse of a matrix object
 ## Function 2: Computes the inverse returned by Function 1. If inverse has been calculated already
